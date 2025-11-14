@@ -7,11 +7,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Tenant extends Model
 {
-                use HasFactory;
+    use HasFactory;
+
     public $timestamps = false;
-    protected $primary_key = 'tenant_id';
-        protected $fillable = [
-        'tanant_id',
+
+    protected $primaryKey = 'tenant_id';
+
+    protected $fillable = [
+        'tenant_id',
         'school_name',
         'address',
     ];
