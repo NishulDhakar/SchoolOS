@@ -2,17 +2,17 @@
 
 A modern, robust, and scalable School Enterprise Resource Planning (ERP) system designed to streamline educational administration. Built with the latest **Laravel** and **React** technologies, this application offers a seamless single-page application (SPA) experience for managing students, teachers, courses, and enrollments.
 
-## 🚀 Features
+## Features
 
-- **👨‍🏫 Teacher Management**: Complete onboard and management system for faculty members.
-- **👨‍🎓 Student Information System**: Track student details, admission status, and academic progress.
-- **📚 Course Management**: Create, update, and organize educational courses and curriculums.
-- **📝 Enrollment Handling**: Efficiently manage student enrollments into specific courses.
-- **📊 Interactive Dashboard**: Real-time analytics and overview of institutional data.
-- **🔐 Secure Authentication**: Robust user authentication and authorization using Laravel Fortify.
-- **🎨 Modern UI/UX**: Beautiful, responsive interface built with Tailwind CSS 4 and Radix UI components.
+- **Teacher Management**: Complete onboard and management system for faculty members.
+- **Student Information System**: Track student details, admission status, and academic progress.
+- **Course Management**: Create, update, and organize educational courses and curriculums.
+- **Enrollment Handling**: Efficiently manage student enrollments into specific courses.
+- **Interactive Dashboard**: Real-time analytics and overview of institutional data.
+- **Secure Authentication**: Robust user authentication and authorization using Laravel Fortify.
+- **Modern UI/UX**: Beautiful, responsive interface built with Tailwind CSS 4 and Radix UI components.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **Framework**: [Laravel 12](https://laravel.com)
@@ -28,7 +28,7 @@ A modern, robust, and scalable School Enterprise Resource Planning (ERP) system 
 - **Bundler**: [Vite](https://vitejs.dev)
 - **Animation**: Framer Motion
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── app/                  # Laravel Application Core (Controllers, Models)
@@ -44,7 +44,7 @@ A modern, robust, and scalable School Enterprise Resource Planning (ERP) system 
 └── public/               # Static Assets
 ```
 
-## ⚡ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -93,17 +93,17 @@ Ensure you have the following installed:
 
    Access the application at `http://localhost:8000`.
 
-## 🧪 Running Tests
+## Running Tests
 
 To run the server-side tests:
 ```bash
 php artisan test
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
