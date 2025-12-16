@@ -1,4 +1,4 @@
-# Multi-tenant School ERP
+# School ERP
 
 A modern, robust, and scalable School Enterprise Resource Planning (ERP) system designed to streamline educational administration. Built with the latest **Laravel** and **React** technologies, this application offers a seamless single-page application (SPA) experience for managing students, teachers, courses, and enrollments.
 
@@ -57,7 +57,7 @@ Ensure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/NishulDhakar/Multi-tenant-School-ERP.git
+   git clone https://github.com/NishulDhakar/SchoolOS.git
    cd Multi-tenant-School-ERP
    ```
 
