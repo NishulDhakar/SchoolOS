@@ -57,7 +57,7 @@ Ensure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://your-repo-url.git
+   git clone https://github.com/NishulDhakar/Multi-tenant-School-ERP.git
    cd Multi-tenant-School-ERP
    ```
 
@@ -88,7 +88,7 @@ Ensure you have the following installed:
 6. **Start the Development Server**
    Run the following command to start both the Laravel server and Vite development server concurrently:
    ```bash
-   npm run dev
+   php artisan serve 
    ```
 
    Access the application at `http://localhost:8000`.
