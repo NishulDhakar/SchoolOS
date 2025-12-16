@@ -103,7 +103,7 @@ const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 
             <Card className="p-4 border-none">
                 {teacherList.length === 0 ? (
-                    <PlaceholderPattern text="No teachers found. Add one to get started!" />
+                    <PlaceholderPattern text ="No teachers found. Add one to get started!" />
                 ) : (
                     <div className="overflow-x-auto">
                         <table className="min-w-full border border-gray-700">

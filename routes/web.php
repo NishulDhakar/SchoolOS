@@ -42,8 +42,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::delete('/enrollments/{id}', [EnrollmentController::class, 'destroy'])->name('enrollments.destroy');  
 
     //dashboard Route
-    Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboards.index');
-
+    Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
 
 });
 

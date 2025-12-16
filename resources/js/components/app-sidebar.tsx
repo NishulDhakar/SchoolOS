@@ -2,18 +2,18 @@ import { NavFooter } from '@/components/nav-footer';
 import { NavMain } from '@/components/nav-main';
 import { NavUser } from '@/components/nav-user';
 import {
-    Sidebar,
-    SidebarContent,
-    SidebarFooter,
-    SidebarHeader,
-    SidebarMenu,
-    SidebarMenuButton,
-    SidebarMenuItem,
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarHeader,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { dashboard } from "@/routes/app-routes";
+import { dashboard } from "@/routes";
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { Folder, LayoutGrid, GraduationCap, BookOpen , UserRound, FileText} from 'lucide-react';
+import { Folder, LayoutGrid, GraduationCap, BookOpen, UserRound, FileText } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -42,7 +42,7 @@ const mainNavItems: NavItem[] = [
     href: '/enrollments',
     icon: FileText,
   },
-    {
+  {
     title: 'Classes',
     href: '/classes',
     icon: LayoutGrid,
@@ -67,7 +67,7 @@ const mainNavItems: NavItem[] = [
     href: '/notices',
     icon: FileText,
   },
-    {
+  {
     title: 'Buses',
     href: '/buses',
     icon: BookOpen,
@@ -77,7 +77,7 @@ const mainNavItems: NavItem[] = [
     href: '/exams',
     icon: FileText,
   },
-    {
+  {
     title: 'Library',
     href: '/library',
     icon: FileText,
@@ -86,41 +86,41 @@ const mainNavItems: NavItem[] = [
 ];
 
 const footerNavItems: NavItem[] = [
-    {
-        title: 'Repository',
-        href: 'https://github.com/laravel/react-starter-kit',
-        icon: Folder,
-    },
-    {
-        title: 'Documentation',
-        href: 'https://laravel.com/docs/starter-kits#react',
-        icon: BookOpen,
-    },
+  {
+    title: 'Repository',
+    href: 'https://github.com/laravel/react-starter-kit',
+    icon: Folder,
+  },
+  {
+    title: 'Documentation',
+    href: 'https://laravel.com/docs/starter-kits#react',
+    icon: BookOpen,
+  },
 ];
 
 export function AppSidebar() {
-    return (
-        <Sidebar collapsible="icon" variant="inset">
-            <SidebarHeader>
-                <SidebarMenu>
-                    <SidebarMenuItem>
-                        <SidebarMenuButton size="lg" asChild>
-                            <Link href={dashboard.url} prefetch>
-                                <AppLogo />
-                            </Link>
-                        </SidebarMenuButton>
-                    </SidebarMenuItem>
-                </SidebarMenu>
-            </SidebarHeader>
+  return (
+    <Sidebar collapsible="icon" variant="inset">
+      <SidebarHeader>
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton size="lg" asChild>
+              <Link href={dashboard.url()} prefetch>
+                <AppLogo />
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
+      </SidebarHeader>
 
-            <SidebarContent>
-                <NavMain items={mainNavItems} />
-            </SidebarContent>
+      <SidebarContent>
+        <NavMain items={mainNavItems} />
+      </SidebarContent>
 
-            <SidebarFooter>
-                <NavFooter items={footerNavItems} className="mt-auto" />
-                <NavUser />
-            </SidebarFooter>
-        </Sidebar>
-    );
+      <SidebarFooter>
+        <NavFooter items={footerNavItems} className="mt-auto" />
+        <NavUser />
+      </SidebarFooter>
+    </Sidebar>
+  );
 }
